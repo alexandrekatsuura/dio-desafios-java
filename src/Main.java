@@ -1,4 +1,5 @@
 import exercicios.*;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
@@ -19,6 +20,9 @@ public class Main {
         menu.append("8 - Uniformes de final de ano\n");
         menu.append("9 - Fila do Banco\n");
         menu.append("10 - Gincana no Acampamento\n");
+        menu.append("11 - Ordenação de palavras por tamanho\n");
+        menu.append("12 - Encontre a maior substring\n");
+        menu.append("13 - Validador de senhas com requisitos\n");
         menu.append("0 - Sair");
 
         BufferedReader br;
@@ -46,6 +50,9 @@ public class Main {
                 case "8" -> UniformesDeFinalDeAno.Executar();
                 case "9" -> FiladoBanco.Executar();
                 case "10" -> GincanaNoAcampamento.Executar();
+                case "11" -> OrdenacaoDePalavrasPorTamanho.Executar();
+                case "12" -> EncontreAMaiorSubstring.Executar();
+                case "13" -> ValidadorDeSenhasComRequisitos.Executar();
                 case "0" -> loop = false;
                 default -> System.out.println("Opção Inválida! Digite uma opcao válida ou zero (0) para sair");
             }
