@@ -58,7 +58,7 @@ public class ValidadorDeSenhasComRequisitos {
                 }
             }
 
-        }catch(NoSuchElementException e){
+        }catch(NoSuchElementException ignored){
 
         }
     }

@@ -23,6 +23,8 @@ public class Main {
         menu.append("11 - Ordenação de palavras por tamanho\n");
         menu.append("12 - Encontre a maior substring\n");
         menu.append("13 - Validador de senhas com requisitos\n");
+        menu.append("14 - Pedra, Papel, Tesoura, Lagarto e Spock\n");
+        menu.append("15 - Atalhos para o Weblogger Brasil\n");
         menu.append("0 - Sair");
 
         BufferedReader br;
@@ -53,6 +55,8 @@ public class Main {
                 case "11" -> OrdenacaoDePalavrasPorTamanho.Executar();
                 case "12" -> EncontreAMaiorSubstring.Executar();
                 case "13" -> ValidadorDeSenhasComRequisitos.Executar();
+                case "14" -> PedraPapelTesouraLagartoESpock.Executar();
+                case "15" -> AtalhosParaOWebloggerBrasil.Executar();
                 case "0" -> loop = false;
                 default -> System.out.println("Opção Inválida! Digite uma opcao válida ou zero (0) para sair");
             }
